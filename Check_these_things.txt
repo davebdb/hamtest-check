@@ -1,0 +1,8 @@
+To check if a Linux system is running on a Virtual Machine (VM), use virt-what (most reliable) or dmidecode -s system-product-name. Other common methods include lscpu (identifies hypervisor) and systemd-detect-virt
+
+who
+
+ps
+
+cat /proc/cpuinfo
+
