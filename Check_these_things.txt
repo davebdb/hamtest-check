@@ -6,3 +6,4 @@ ps
 
 cat /proc/cpuinfo
 
+Need to check for paths of the audit commands to be sure they are running from a legitimate source.
