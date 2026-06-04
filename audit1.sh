@@ -168,4 +168,31 @@ echo ""
 echo "--- [MISC] MISC commands not yet integrated into the main script for checking ---"
 echo "running:  'who' command"
 who
+echo
+echo
+echo "The \$PATH variable contains the execution path of commands that are not using the full path."
+echo "If there are references to /home/ or /local/ before the standard /bin, /sbin, /usr/bin, and /usr/sbin"
+echo "these will execute from the earlier \$PATH reference first before the system default ones."
+echo "This is just a WARNING if path contains local or home.  Please refer to the following output as to"
+echo "the execution path of the commands used for testing"
+echo
+echo "checking \$PATH"
+echo "\$PATH = $PATH"
+echo ""
+echo ""
+echo "Checking the path of testing commands."
+echo "PROCTOR LOOK FOR: paths for the following executables that have \"local\" within them."
+echo "If a path has a \"local\" in it, could be a potential locally compiled and installed copy."
+echo "Also look for any of the following if they are running from a \"home\" directory."
+echo "Result:"
+which awk
+which echo
+which grep
+which hostnamectl
+which lsmod
+which ps
+which systemd-detect-virt
+which which
+which who
+which xrandr
 
