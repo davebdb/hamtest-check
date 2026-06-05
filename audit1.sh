@@ -181,10 +181,10 @@ echo "\$PATH = $PATH"
 echo ""
 echo ""
 echo "Checking the path of testing commands."
-echo "PROCTOR LOOK FOR: paths for the following executables that have \"local\" within them."
-echo "If a path has a \"local\" in it, could be a potential locally compiled and installed copy."
-echo "Also look for any of the following if they are running from a \"home\" directory."
-echo "Result:"
+echo "PROCTOR LOOK FOR: paths for the following executables that have /local/ within them."
+echo "If a path has a /local/ in it, could be a potential locally compiled and installed copy."
+echo "Also look for any of the following if they are running from a /home/ directory."
+echo "Results:"
 which awk
 which echo
 which grep
