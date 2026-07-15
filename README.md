@@ -57,7 +57,7 @@ Results are **color-coded**: <span style="color:green">**PASS** (green)</span>, 
 | 14 | Local AI / LLM Tools | **Stop** Ollama, llama.cpp, LM Studio, Jan.ai, text-generation-webui |
 | 15 | Browser Automation | **Close** Selenium, chromedriver, geckodriver, Playwright |
 | 16 | Cloud Sync Services | **Close** Dropbox, rclone, OneDrive, Nextcloud, Syncthing |
-| 17 | Process Hiding (ptrace) | Set restricted scope: `echo 1 | sudo tee /proc/sys/kernel/yama/ptrace_scope` |
+| 17 | Process Hiding (ptrace) | Set restricted scope: `echo 1 > /proc/sys/kernel/yama/ptrace_scope` |
 | 18 | Network Listeners | **Stop** unexpected services listening on external interfaces |
 | 19 | Active TTY Sessions | **Log out** of extra terminal sessions; only one session should be active |
 | 20 | Script Integrity (SHA256) | **Do not modify** the script; verify hash matches the published value |
